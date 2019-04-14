@@ -12,3 +12,4 @@ docker run --rm \
     -v /opt/bin:/out \
     $INSTALLER_IMAGE /bin/bash -c "$ETCDADM_INSTALL_SCRIPT"
 docker image rm $INSTALLER_IMAGE
+sudo /opt/bin/etcdadm download --version 3.3.8
